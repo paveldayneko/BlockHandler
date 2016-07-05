@@ -40,9 +40,7 @@ namespace BlocksHandler
             finally
             {
                 context.Response.Write(response);
-            }
-
-           
+            }           
         }
 
         private string ConverteToJson(object obj)
