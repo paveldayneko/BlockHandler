@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<Page WIDTH="845" HEIGHT="1430">
+	<Entity ENTITY_TYPE="Article" ID="Ar00100" SIZE="Small" BOX="17 220 150 346" TOTAL_CHARS_COUNT="184" WORDCNT="44">
+		<Name>THE FINE PRINT Samaritan Clinic</Name>
+		<Block ID="Ar0010000" BOX="17 220 120 286" ELEMENT_TYPE="h1" SEQ_NO="0"  />
+		<Block ID="Ar0010001" BOX="17 287 150 346" ELEMENT_TYPE="body" SEQ_NO="1"  />
+	</Entity>
+	<Entity ENTITY_TYPE="Article" ID="Ar00101" SIZE="Medium" BOX="182 211 831 1016" CONTINUATION_TO="Ar00603" TOTAL_CHARS_COUNT="2099" WORDCNT="455">
+		<Name>2004, A Year to Remember</Name>
+		<Block ID="Ar0010100" BOX="185 211 825 278" ELEMENT_TYPE="h1" SEQ_NO="0" />
+		<Block ID="Ar0010101" BOX="182 285 335 545" ELEMENT_TYPE="body" SEQ_NO="1" />
+		<Block ID="Ar0010102" BOX="182 546 335 645" ELEMENT_TYPE="body" SEQ_NO="2" />
+		<Block ID="Ar0010103" BOX="182 996 663 1016" ELEMENT_TYPE="body" SEQ_NO="3" />
+		<Block ID="Ar0010104" BOX="346 622 663 642" ELEMENT_TYPE="body" SEQ_NO="4" />
+		<Block ID="Ar0010105" BOX="673 283 830 517" ELEMENT_TYPE="body" SEQ_NO="5" />
+		<Block ID="Ar0010106" BOX="671 518 831 649" ELEMENT_TYPE="body" SEQ_NO="6" />
+	</Entity>
+	<Entity ENTITY_TYPE="Article" ID="Ar00102" SIZE="Small" BOX="17 354 153 400" TOTAL_CHARS_COUNT="82" WORDCNT="21">
+		<Name>PEO Chapter DE</Name>
+		<Block ID="Ar0010200" BOX="17 354 113 370" ELEMENT_TYPE="h1" SEQ_NO="0"  />
+		<Block ID="Ar0010201" BOX="17 372 153 400" ELEMENT_TYPE="body" SEQ_NO="1"  />
+	</Entity>
+	<Entity ENTITY_TYPE="Article" ID="Ar00103" SIZE="Small" BOX="17 408 153 464" TOTAL_CHARS_COUNT="109" WORDCNT="26">
+		<Name>City Council meeting</Name>
+		<Block ID="Ar0010300" BOX="17 408 137 424" ELEMENT_TYPE="h1" SEQ_NO="0"  />
+		<Block ID="Ar0010301" BOX="17 425 153 464" ELEMENT_TYPE="body" SEQ_NO="1"  />
+	</Entity>
+	<Entity ENTITY_TYPE="Article" ID="Ar00104" SIZE="Small" BOX="17 472 158 557" TOTAL_CHARS_COUNT="178" WORDCNT="41">
+		<Name>HTA meeting</Name>
+		<Block ID="Ar0010400" BOX="17 472 92 488" ELEMENT_TYPE="h1" SEQ_NO="0"  />
+		<Block ID="Ar0010401" BOX="17 489 158 557" ELEMENT_TYPE="body" SEQ_NO="1"  />
+	</Entity>
+	<Entity ENTITY_TYPE="Article" ID="Ar00105" SIZE="Small" BOX="17 566 148 622" TOTAL_CHARS_COUNT="124" WORDCNT="28">
+		<Name>Cons. Dist. meeting</Name>
+		<Block ID="Ar0010500" BOX="17 566 129 582" ELEMENT_TYPE="h1" SEQ_NO="0"  />
+		<Block ID="Ar0010501" BOX="17 584 148 622" ELEMENT_TYPE="body" SEQ_NO="1"  />
+	</Entity>
+	<Entity ENTITY_TYPE="Article" ID="Ar00106" SIZE="Small" BOX="17 631 158 707" TOTAL_CHARS_COUNT="166" WORDCNT="39">
+		<Name>Bound Together Quilters</Name>
+		<Block ID="Ar0010600" BOX="17 631 157 647" ELEMENT_TYPE="h1" SEQ_NO="0"  />
+		<Block ID="Ar0010601" BOX="17 649 158 707" ELEMENT_TYPE="body" SEQ_NO="1"  />
+	</Entity>
+	<Entity ENTITY_TYPE="Article" ID="Ar00107" SIZE="Small" BOX="17 715 157 790" TOTAL_CHARS_COUNT="186" WORDCNT="35">
+		<Name>Girl Scout registration</Name>
+		<Block ID="Ar0010700" BOX="17 715 145 731" ELEMENT_TYPE="h1" SEQ_NO="0" TOC_ENTRY_ID="7" />
+		<Block ID="Ar0010701" BOX="17 732 157 790" ELEMENT_TYPE="body" SEQ_NO="1" TOC_ENTRY_ID="7" />
+	</Entity>
+	<Entity ENTITY_TYPE="Article" ID="Ar00108" SIZE="Medium" BOX="673 650 831 1379" CONTINUATION_TO="Ar00604" TOTAL_CHARS_COUNT="1658" WORDCNT="373">
+		<Name>The history and traditions of New Year’s Day</Name>
+		<Block ID="Ar0010800" BOX="676 650 827 745" ELEMENT_TYPE="h1" SEQ_NO="0" TOC_ENTRY_ID="22" />
+		<Block ID="Ar0010801" BOX="676 750 828 974" ELEMENT_TYPE="body" SEQ_NO="1" TOC_ENTRY_ID="22" />
+		<Block ID="Ar0010802" BOX="676 976 828 1201" ELEMENT_TYPE="body" SEQ_NO="2" TOC_ENTRY_ID="22" />
+		<Block ID="Ar0010803" BOX="673 1202 831 1379" ELEMENT_TYPE="body" SEQ_NO="3" TOC_ENTRY_ID="22" />
+	</Entity>
+	<Entity ENTITY_TYPE="Article" ID="Ar00109" SIZE="Small" BOX="17 798 158 883" TOTAL_CHARS_COUNT="204" WORDCNT="51">
+		<Name>Red Hat Society</Name>
+		<Block ID="Ar0010900" BOX="17 798 107 814" ELEMENT_TYPE="h1" SEQ_NO="0"  />
+		<Block ID="Ar0010901" BOX="17 815 158 883" ELEMENT_TYPE="body" SEQ_NO="1"  />
+	</Entity>
+	<Entity ENTITY_TYPE="Article" ID="Ar00110" SIZE="Small" BOX="17 894 159 1009" TOTAL_CHARS_COUNT="274" WORDCNT="65">
+		<Name>2005 Fine Print</Name>
+		<Block ID="Ar0011000" BOX="17 894 106 910" ELEMENT_TYPE="h1" SEQ_NO="0"  />
+		<Block ID="Ar0011001" BOX="17 911 159 1009" ELEMENT_TYPE="body" SEQ_NO="1"  />
+	</Entity>
+	<Entity ENTITY_TYPE="Article" ID="Ar00111" SIZE="Small" BOX="17 1018 149 1064" TOTAL_CHARS_COUNT="93" WORDCNT="19">
+		<Name>YMCA Basketball</Name>
+		<Block ID="Ar0011100" BOX="17 1018 116 1034" ELEMENT_TYPE="h1" SEQ_NO="0"  />
+		<Block ID="Ar0011101" BOX="17 1035 149 1064" ELEMENT_TYPE="body" SEQ_NO="1"  />
+	</Entity>
+	<Entity ENTITY_TYPE="Article" ID="Ar00112" SIZE="Small" BOX="17 1073 154 1138" TOTAL_CHARS_COUNT="132" WORDCNT="34">
+		<Name>Primero Board of Ed</Name>
+		<Block ID="Ar0011200" BOX="17 1073 133 1089" ELEMENT_TYPE="h1" SEQ_NO="0"  />
+		<Block ID="Ar0011201" BOX="17 1090 154 1138" ELEMENT_TYPE="body" SEQ_NO="1"  />
+	</Entity>
+	<Entity ENTITY_TYPE="Article" ID="Ar00113" SIZE="Medium" BOX="182 1025 663 1376" TOTAL_CHARS_COUNT="2337" WORDCNT="463">
+		<Name>Holl appointed new President of North Eastern New Mexico Education Foundation</Name>
+		<Block ID="Ar0011300" BOX="182 1025 660 1094" ELEMENT_TYPE="h1" SEQ_NO="0" TOC_ENTRY_ID="21" />
+		<Block ID="Ar0011301" BOX="182 1099 335 1376" ELEMENT_TYPE="body" SEQ_NO="1" TOC_ENTRY_ID="21" />
+		<Block ID="Ar0011302" BOX="346 1099 499 1376" ELEMENT_TYPE="body" SEQ_NO="2" TOC_ENTRY_ID="21" />
+		<Block ID="Ar0011303" BOX="510 1099 663 1376" ELEMENT_TYPE="body" SEQ_NO="3" TOC_ENTRY_ID="21" />
+	</Entity>
+	<Entity ENTITY_TYPE="Article" ID="Ar00114" SIZE="Small" BOX="17 1149 159 1302" TOTAL_CHARS_COUNT="250" WORDCNT="61">
+		<Name>LOCAL FORECAST Today</Name>
+		<Block ID="Ar0011400" BOX="17 1149 122 1213" ELEMENT_TYPE="h1" SEQ_NO="0"  />
+		<Block ID="Ar0011401" BOX="17 1214 159 1302" ELEMENT_TYPE="body" SEQ_NO="1"  />
+	</Entity>
+	<Entity ENTITY_TYPE="Article" ID="Ar00115" SIZE="Small" BOX="17 1308 154 1373" TOTAL_CHARS_COUNT="117" WORDCNT="29">
+		<Name>Tonight</Name>
+		<Block ID="Ar0011500" BOX="17 1308 61 1324" ELEMENT_TYPE="h1" SEQ_NO="0"  />
+		<Block ID="Ar0011501" BOX="17 1325 154 1373" ELEMENT_TYPE="body" SEQ_NO="1"  />
+	</Entity>
+	<Entity ENTITY_TYPE="Picture" ID="Pc00116" SIZE="Medium" BOX="336 279 669 617" EMBEDDED_INTO="Ar00101" EMBEDDED_AFTER="Ar0010100" TOTAL_CHARS_COUNT="0" WORDCNT="0">
+		<Name>Untitled Picture</Name>
+		<Block ID="Pc0011600" BOX="336 279 669 617" ELEMENT_TYPE="Picture" SEQ_NO="0" TOC_ENTRY_ID="15" IMG_EXT="jpg"/>
+	</Entity>
+	<Entity ENTITY_TYPE="Picture" ID="Pc00117" SIZE="Medium" BOX="181 649 664 993" EMBEDDED_INTO="Ar00101" WORDCNT="0">
+		<Name>Untitled Picture</Name>
+		<Block ID="Pc0011700" BOX="181 649 664 993" ELEMENT_TYPE="Picture" SEQ_NO="0" TOC_ENTRY_ID="16" IMG_EXT="jpg"/>
+	</Entity>
+</Page>
