@@ -5,6 +5,7 @@ using System.Web;
 using System.Text;
 
 using BlocksHandler.Services;
+using BlocksHandler.Model;
 
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
@@ -25,14 +26,32 @@ namespace BlocksHandler
             context.Response.ContentType = "application/json";
             context.Response.Charset = Encoding.UTF8.WebName;
 
-            var result = _contentBlockService.GetContentBlocks();
+            string response =string.Empty;
+            try {
 
-            context.Response.Write(
-                JsonConvert.SerializeObject(
-                    result,
-                    Formatting.Indented,
-                    new JsonSerializerSettings { ContractResolver = new CamelCasePropertyNamesContractResolver() })
-                );
+                var result = _contentBlockService.GetContentBlocks();
+                response = ConverteToJson(result);
+            }
+            catch(Exception e)
+            {
+                response = ConverteToJson(new { Message = e.Message });
+                context.Response.StatusCode = 500;
+            }
+            finally
+            {
+                context.Response.Write(response);
+            }
+
+           
+        }
+
+        private string ConverteToJson(object obj)
+        {
+            var result = JsonConvert.SerializeObject(
+                      obj,
+                      Formatting.Indented,
+                      new JsonSerializerSettings { ContractResolver = new CamelCasePropertyNamesContractResolver() });
+            return result;
         }
 
         public bool IsReusable
