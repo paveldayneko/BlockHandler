@@ -56,8 +56,8 @@
 var contentController = (function() {
 	var currentActive = null;
 	var defaultState = null;
-	var imageWidth = 0;
-	var imageHeight = 0;
+	var imageMaxWidth = 0;
+	var imageMaxHeight = 0;
 
 	getImagetNaturalSize();
 
@@ -79,27 +79,32 @@ var contentController = (function() {
 
 		var viewPort = $('.image-container');
 		defaultState = block.attr('style');
-		var height = viewPort.height()
-		var width = viewPort.width()
+		var height = viewPort.height();
+		var width = viewPort.width();
 
 
 		var image = $('#image-wrapper img');
+		var imageHeight = image.height();
+		var imageWidth = image.width();
 
 		var widthRatio = width / block.width();
 		var heightRatio = height / block.height();
 
-		if(image.height()*heightRatio>imageHeight)
-		{
-			heightRatio=imageHeight/image.height();
+		if (image.height() * heightRatio > imageMaxHeight) {
+			heightRatio = imageMaxHeight / imageHeight;
 		}
-		if(image.width()*widthRatio>imageWidth){
-			widthRatio=imageWidth/image.width();
+		if (image.width() * widthRatio > imageMaxWidth) {
+			widthRatio = imageMaxWidth / imageWidth;
 		}
 
 		block.height(block.height() * heightRatio);
 		block.width(block.width() * widthRatio);
 
-		image.height(image.height()*heightRatio);	
+
+
+		image.height(imageHeight * heightRatio);
+		image.width(imageWidth * widthRatio);
+		image.css('max-width','none');
 
 
 	}
@@ -116,8 +121,8 @@ var contentController = (function() {
 		var image = new Image();
 		image.src = $('#image-wrapper img').attr("src");
 		image.onload = function() {
-			imageWidth = this.width;
-			imageHeight = this.height;
+			imageMaxWidth = this.width;
+			imageMaxHeight = this.height;
 		};
 
 	}
