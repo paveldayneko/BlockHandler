@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using System.Collections.Generic;
 using BlocksHandler.Model;
 
-
-    namespace BlocksHandler.Services
+namespace BlocksHandler.Services.Abstraction
 {
     public interface IContentBlockService
     {
-        List<ContentBlockModel> GetContentBlocks();
-       
+        IEnumerable<ContentBlockModel> GetContentBlocks(string fileUri);
     }
 }

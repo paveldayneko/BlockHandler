@@ -1,63 +1,50 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Text;
-
+using BlocksHandler.Converters.Abstraction;
+using BlocksHandler.Converters;
+using BlocksHandler.Services.Abstraction;
 using BlocksHandler.Services;
-using BlocksHandler.Model;
-
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
 
 namespace BlocksHandler
 {
     public class GetBlocks : IHttpHandler
     {
-        private IContentBlockService _contentBlockService { get; set; }
+        private readonly IContentBlockService _contentBlockService;
+        private readonly IJsonConverter _jsonConverter;
 
         public GetBlocks()
         {
             //There is no way to use dependency resolver with http handlers.
-            _contentBlockService = new ContentBlockService();
+            _contentBlockService = new ContentBlockService(new ContentBlockSerializer(), new ContentBlockModelConverter());
+            _jsonConverter = new JsonConverter();
         }
+
         public void ProcessRequest(HttpContext context)
         {
-            context.Response.ContentType = "application/json";
+            context.Response.ContentType = Constants.HttpResponseJsonContentType;
             context.Response.Charset = Encoding.UTF8.WebName;
 
-            string response =string.Empty;
-            try {
-
-                var result = _contentBlockService.GetContentBlocks();
-                response = ConverteToJson(result);
-            }
-            catch(Exception e)
+            var response = string.Empty;
+            try
             {
-                response = ConverteToJson(new { Message = e.Message });
-                context.Response.StatusCode = 500;
+                var result = _contentBlockService.GetContentBlocks(Constants.InputXmlFileUri);
+                response = _jsonConverter.ConverteToJson(result);
+            }
+            catch (Exception e)
+            {
+                response = _jsonConverter.ConverteToJson(new { e.Message });
+                context.Response.StatusCode = Constants.InternalServerErrorCode;
             }
             finally
             {
                 context.Response.Write(response);
-            }           
-        }
-
-        private string ConverteToJson(object obj)
-        {
-            var result = JsonConvert.SerializeObject(
-                      obj,
-                      Formatting.Indented,
-                      new JsonSerializerSettings { ContractResolver = new CamelCasePropertyNamesContractResolver() });
-            return result;
+            }
         }
 
         public bool IsReusable
         {
-            get
-            {
-                return false;
-            }
+            get { return false; }
         }
     }
 }
