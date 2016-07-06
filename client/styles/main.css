@@ -1,0 +1,58 @@
+img {
+	height: 100%;
+	max-width: 100%;
+}
+
+body, .parent-container{
+	width:100%;
+    height:100%;
+    margin:0;
+}
+body{
+	padding-top: 10px;
+}
+
+.button-container{
+	border-bottom: 1px solid black;
+	padding-bottom: 15px;
+}
+
+#block-list{
+	list-style-type: none;
+	padding-left: 0;
+}
+#block-list li{
+	cursor: pointer;
+}
+
+.toolbar-container, .image-container{
+	height: 100%;
+	float: left;
+    display: inline-block;
+}
+
+.toolbar-container{
+	width: 20%;
+}
+
+.image-container{
+	width: 80%;
+	text-align: center;
+}
+.list-container{
+	height: calc(100% - 50px);
+	overflow-y:scroll;
+}
+
+#image-wrapper{
+	position:relative;
+	display: inline-block;
+}
+#image-wrapper div{
+	position: absolute;
+}
+
+.active-block{
+	    background-color: yellow;
+    opacity: 0.5;
+}
