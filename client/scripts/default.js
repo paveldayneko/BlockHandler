@@ -6,7 +6,7 @@
 
 	var contentBlockService = (function() {
 
-		var url = "http://localhost:2000/";
+		var url = "http://localhost:61167/";
 
 		return {
 			getBlocks: getBlocks

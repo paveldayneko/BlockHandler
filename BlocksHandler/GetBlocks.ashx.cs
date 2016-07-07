@@ -25,6 +25,9 @@ namespace BlocksHandler
             context.Response.ContentType = Constants.HttpResponseJsonContentType;
             context.Response.Charset = Encoding.UTF8.WebName;
 
+            
+           
+
             var response = string.Empty;
             try
             {
@@ -38,6 +41,13 @@ namespace BlocksHandler
             }
             finally
             {
+                var callback = context.Request["callback"];
+                if (!string.IsNullOrEmpty(callback))
+                {
+                    // if the callback parameter is present wrap the JSON
+                    // into this parameter => convert to JSONP
+                    response = string.Format("{0}({1})", callback, response);
+                }
                 context.Response.Write(response);
             }
         }
