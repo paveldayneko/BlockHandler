@@ -29,6 +29,7 @@ body{
 	height: 100%;
 	float: left;
     display: inline-block;
+    overflow: auto;
 }
 
 .toolbar-container{
